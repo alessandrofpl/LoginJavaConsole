@@ -6,7 +6,7 @@ public class Main {
         final String user = "alessandrofpl";
         final String pass = "admin";
         String login, senha;
-        Boolean logado = false;
+        boolean logado;
         int tentativa =1;
 
         Scanner entrada = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main {
                 logado = false;
                 tentativa++;
             }
-        }while (logado == false && tentativa <=3);
+        }while (!logado && tentativa <=3);
         if (tentativa>=3){
             System.out.println("Conta Bloqueada!");
         }
