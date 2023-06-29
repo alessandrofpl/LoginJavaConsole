@@ -26,7 +26,7 @@ public class Main {
                 tentativa++;
             }
         }while (!logado && tentativa <=3);
-        if (tentativa>=3){
+        if (tentativa>3){
             System.out.println("Conta Bloqueada!");
         }
     }
